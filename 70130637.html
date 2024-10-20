@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" >
+
+        <h1>Student Information Form</h1>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="major">Major:</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>Select your year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gpa">GPA:</label>
+                <input type="text" id="gpa" name="gpa" required>
+            </div>
+            <div class="form-group">
+                <label for="extracurricular">Extracurricular Activities:</label>
+                <input type="text" id="extracurricular" name="extracurricular" placeholder="Comma-separated">
+            </div>
+            <div class="form-group">
+                <label for="language">Languages Spoken:</label>
+                <input type="text" id="language" name="language" placeholder="Comma-separated">
+            </div>
+            <div class="form-group">
+                <label for="emailPref">Preferred Email for Communication:</label>
+                <input type="email" id="emailPref" name="emailPref" required>
+            </div>
+            <div class="form-group">
+                <label for="socialMedia">Social Media Links:</label>
+                <input type="text" id="socialMedia" name="socialMedia" placeholder="Comma-separated">
+            </div>
+            <div class="form-group">
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileUpload">Upload Profile Picture:</label>
+                <input type="file" id="fileUpload" name="fileUpload">
+            </div>
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input type="text" id="parentName" name="parentName" required>
+            </div>
+            <div class="form-group">
+                <label for="parentPhone">Parent/Guardian Phone:</label>
+                <input type="tel" id="parentPhone" name="parentPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="emergencyContactName">Emergency Contact Name:</label>
+                <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+            </div>
+            <div class="form-group">
+                <label for="emergencyContactPhone">Emergency Contact Phone:</label>
+                <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="previousSchool">Previous School Attended:</label>
+                <input type="text" id="previousSchool" name="previousSchool" required>
+            </div>
+            <div class="form-group">
+                <label for="previousGPA">Previous GPA:</label>
+                <input type="text" id="previousGPA" name="previousGPA" required>
+            </div>
+            <div class="form-group">
+                <label for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+            <div class="form-group">
+                <label for="terms">Accept Terms and Conditions:</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
